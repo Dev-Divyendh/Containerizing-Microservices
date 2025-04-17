@@ -13,8 +13,9 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    // Ensure Maven is available and build the Spring Boot application
-                    sh 'mvn clean package -DskipTests'
+                    dir('survey-service') { // Assuming the pom.xml is in the 'survey-service' folder
+                        sh 'mvn clean package -DskipTests'
+                    }
                 }
             }
         }
