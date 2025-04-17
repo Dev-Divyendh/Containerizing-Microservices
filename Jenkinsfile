@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    dir('survey-service') { //  pom.xml 
+                    dir('survey-service') {  
                         sh 'mvn clean package -DskipTests'
                     }
                 }
