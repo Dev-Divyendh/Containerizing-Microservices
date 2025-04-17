@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: survey-service
+  labels:
+    app: survey-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: survey-service
+  template:
+    metadata:
+      labels:
+        app: survey-service
+    spec:
+      containers:
+        - name: survey-service
+          image: devdivyendh10/survey-service:latest
+          ports:
+            - containerPort: 8080

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: survey-service
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: survey-service
+  template:
+    metadata:
+      labels:
+        app: survey-service
+    spec:
+      containers:
+        - name: survey-service
+          image: devdivyendh10/survey-service:latest  # Docker image in Docker Hub
+          ports:
+            - containerPort: 80  # Port the app is exposed on
