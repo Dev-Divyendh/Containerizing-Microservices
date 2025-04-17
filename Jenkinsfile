@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    // Build the Spring Boot application
+                    // Ensure Maven is available and build the Spring Boot application
                     sh 'mvn clean package -DskipTests'
                 }
             }
