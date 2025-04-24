@@ -1,4 +1,4 @@
-# 🧾 Student Survey Microservice — SWE 645 Assignment 3
+# 🧾 Student Survey Microservice
 
 This project implements a full-stack backend microservice for managing student surveys at a university. Built using **Spring Boot** and **MySQL (Amazon RDS)**, the service is containerized with **Docker**, deployed to **Kubernetes on AWS EC2**, and orchestrated via a **Jenkins CI/CD pipeline**. The microservice enables full **CRUD** operations on survey data and is tested using **Postman**.
 
