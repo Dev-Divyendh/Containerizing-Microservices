@@ -165,12 +165,6 @@ kubectl apply -f k8s-config/service.yaml
 
 ---
 
-## 📸 Screenshots & Demo
-
-📁 Available in `docs/demo_screenshots/`  
-📽️ Demo Video: *[Add your video link here]*
-
----
 
 ## 📚 References & Tools
 
